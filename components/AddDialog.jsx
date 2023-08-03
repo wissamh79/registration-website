@@ -23,7 +23,7 @@ export default function AddDialog({ mutate, url }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/${url}`, {
+      const res = await fetch(`${BASE_URL}/api/${url}`, {
         method: "POST",
         body: JSON.stringify({
           fullName: fullName.toLowerCase(),

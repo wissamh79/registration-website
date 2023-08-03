@@ -22,7 +22,7 @@ export default function ConformDialog({ setConform }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/conform`, {
+      const res = await fetch(`${BASE_URL}/api/conform`, {
         method: "POST",
         body: JSON.stringify({
           email: email.toLowerCase(),

@@ -19,7 +19,7 @@ export default function DeleteDialog({ mutate, id, url }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/${url}/${id}`, {
+      const res = await fetch(`${BASE_URL}/api/${url}/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {

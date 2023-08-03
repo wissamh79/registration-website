@@ -14,7 +14,7 @@ export default function Registration() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/api/attend", {
+      const res = await fetch(`${BASE_URL}api/attend`, {
         method: "POST",
         body: JSON.stringify({
           fullName: fullName.toLowerCase(),

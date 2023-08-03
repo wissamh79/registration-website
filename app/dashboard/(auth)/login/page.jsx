@@ -101,12 +101,12 @@ const Login = ({ url }) => {
       >
         Login with Google
       </button> */}
-      <span className="">- OR -</span>
+      {/* <span className="">- OR -</span>
       <Button variant="outline">
         <Link className="" href="/dashboard/register">
           Create new account
         </Link>
-      </Button>
+      </Button> */}
       {/* <button
         onClick={() => {
           signIn("github");

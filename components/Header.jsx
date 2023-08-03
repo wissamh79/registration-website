@@ -30,11 +30,7 @@ const links = [
     title: "Home",
     href: "/",
   },
-  {
-    id: 3,
-    title: "Dashboard",
-    href: "/dashboard",
-  },
+
   {
     id: 6,
     title: "Registration",
@@ -114,7 +110,7 @@ const Header = () => {
         <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-white to-gray-200 dark:bg-gradient-to-b dark:from-black dark:to-gray-800">
           <div className="w-[15%] flex justify-center items-center space-x-4">
             <ThemeToggle />
-            {session.status === "authenticated" ? (
+            {session.status === "authenticated" && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline">
@@ -134,15 +130,6 @@ const Header = () => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            ) : (
-              <Button
-                onClick={() => {
-                  router?.push("/dashboard/login");
-                }}
-              >
-                <Icons.login className="w-4 h-4 mr-2" />
-                <span>LogIn </span>
-              </Button>
             )}
           </div>
           <div className="flex flex-col items-center justify-center w-2/4 h-[50%] space-y-8">

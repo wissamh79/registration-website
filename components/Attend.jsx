@@ -23,7 +23,7 @@ export default function Accepted() {
   //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
   const { data, mutate, error, isLoading } = useSWR(
-    `http://localhost:3000/api/attend`,
+    `${BASE_URL}/api/attend`,
     fetcher
   );
 

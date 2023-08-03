@@ -31,7 +31,7 @@ export default function EditDialog({
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/${url}/${id}`, {
+      const res = await fetch(`${BASE_URL}/api/${url}/${id}`, {
         method: "POST",
         body: JSON.stringify({
           fullName: fullName.toLowerCase(),
