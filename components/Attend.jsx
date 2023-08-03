@@ -19,6 +19,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Image from "next/image";
+import { BASE_URL } from "@/utils/urls";
 export default function Accepted() {
   //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());

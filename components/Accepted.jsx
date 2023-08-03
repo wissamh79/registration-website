@@ -21,6 +21,7 @@ import {
 import AddDialog from "./AddDialog";
 import EditDialog from "./EditDialog";
 import Image from "next/image";
+import { BASE_URL } from "@/utils/urls";
 
 export default function Accepted() {
   //NEW WAY TO FETCH DATA

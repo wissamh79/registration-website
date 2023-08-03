@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Icons } from "./icons";
+import { BASE_URL } from "@/utils/urls";
 
 export default function EditDialog({
   id,
