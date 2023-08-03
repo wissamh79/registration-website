@@ -12,6 +12,7 @@ import {
 
 import { useToast } from "@/components/ui/use-toast";
 import { Icons } from "./icons";
+import { BASE_URL } from "@/utils/urls";
 
 export default function DeleteDialog({ mutate, id, url }) {
   const { toast } = useToast();
